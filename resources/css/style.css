@@ -9,6 +9,7 @@
 *{
 	body {
 		background-color: white;
+		margin: 0;
 	}
 }
 
@@ -40,35 +41,30 @@ body {
 
 .container1234{
 	position: relative;
+	top: 20px;
 	height: 300px;
 	width: 100%;
 	display: flex;
 	background-color: rgb(255, 255, 255);
 	justify-content: space-between !important;
-	
+	align-items: flex-start;
 }
 
 .menu {
 	position: relative;
+	top: 40px;
 	width: 30%;
 	background-color: rgb(255, 255, 255);
-	margin: auto !important;
-	text-align: center;
-	border: 0em !important;
-}
-
-.menu {
-	position: relative;
-	width: 30%;
-	background-color: rgb(255, 255, 255);
-	margin: auto !important;
+  margin:0 auto;
 	text-align: center;
 	border: 0em !important;
 }
 
 .article {
+	position: relative;
 	background-color: rgb(255, 255, 255) !important;
-	height: 100%;
+	height: 1400px;
+	top: 670px;
 }
 
 .articlecontent {
@@ -91,7 +87,53 @@ body {
 	width: 400px;
 	height: 200px;
 	overflow: hidden;
-	background: url("../img/article1.jpg") no-repeat;
-	background-position: center;
-	background-size: cover;
 }
+
+.video {
+	position: relative;
+	top: 600px;
+}
+
+.videoshow {
+	position: relative;
+	height: 600px;
+	width: 100%;
+	display: flex;
+	background-color: rgb(54, 54, 54);
+	justify-content: center !important;
+	align-items: flex-start;
+}
+
+/*放映室几个海报的样式*/
+.videopost{
+	height: 100%;
+	width: 18%;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	border: 3px solid;
+	cursor: pointer;
+}
+
+footer {
+	background-color: rgb(43, 43, 43);
+	bottom: 0px !important;
+	height: 90px;
+	position: relative;
+	top: 700px;
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+footer div{
+	position: relative;
+	top: 10px;
+}
+
+/* 如何设置内容超出自动省略号
+overflow: hidden;
+	text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;  //显示内容的行数；
+	-webkit-box-orient: vertical;
+*/
